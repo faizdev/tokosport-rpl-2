@@ -20,16 +20,18 @@
         </thead>
 
         <tbody>
-            @for($i = 0; $i < 10; $i++)
+
+            @foreach($dataProduk as $produk)
                 <tr>
                     <td>No</td>
-                    <td>Nama Barang</td>
+                    <td>{{ $produk['nama'] }}</td>
                     <td>Harga Barang</td>
                     <td>Stock</td>
                     <td>Kategori</td>
                     <td>Aksi</td>
                 </tr>
-            @endfor
+            @endforeach
+
         </tbody>
     </table>
 
