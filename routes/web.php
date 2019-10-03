@@ -21,7 +21,11 @@ Route::get('/about-me', function() {
 
 Route::get('/kontak', 'ContactController@index');
 
-Route::get('/produk','ProdukController@index');
+Route::get('/manajemen-produk','ProdukController@index');
+
+
+
+
 
 
 
